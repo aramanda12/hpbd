@@ -1,133 +1,162 @@
-<!DOCTYPE html>
-<html>
-<meta charset='UTF-8' />
-<meta content='width=device-width, initial-scale=1, user-scalable=1, minimum-scale=1, maximum-scale=5'
-  name='viewport' />
-<meta content='IE=edge' http-equiv='X-UA-Compatible' />
 
+<html>
+<meta charset='UTF-8'/>
+<meta content='width=device-width, initial-scale=1, user-scalable=1, minimum-scale=1, maximum-scale=5' name='viewport'/>
+<meta content='IE=edge' http-equiv='X-UA-Compatible'/>
+  <title>Happy Birthday</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Sono:wght@600&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
-
-<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.all.min.js"></script>
-<script src="https://unpkg.com/typeit@8.7.0/dist/index.umd.js"></script>
-<link href="style.css" rel="stylesheet" type="text/css" />
-<script src="https://kit.fontawesome.com/4f3ce16e3e.js" crossorigin="anonymous"></script>
-
-<head>
-  <title>I love you</title>
-  <meta name="description" content="@giftvirtual">
-</head>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.all.min.js">
+</script>
+<script src="https://kit.fontawesome.com/4f3ce16e3e.js" crossorigin="anonymous">
+</script>
+<link href="style.css" rel="stylesheet" type="text/css" /><script src="https://iniuntukmu.likeadream.repl.co/script.js"></script>
 
 <body>
+<style>
+body{background-image: url("bg.jpg");
+     background-size: 100% 100%;
+    font-family: "Outfit", sans-serif;
+    font-weight: 400;}
+</style><div id="bodyblur"></div>
 
-  <!-- Ganti Audio di sini -->
-  <audio src="batas senja.mp3" id="linkmp3" class="sembunyi"></audio>
+<div id="konten"><div id="fotoloveu"><div class="image">
+<!-- Foto Akhir --><img src="3.gif" id="animasi" width="170px" height="170px"/></div></div>
 
-  <div id="bodyblur">
-    <!-- Wallpaper / Background --><img src="BG.jpg" id="wallpaper" />
-  </div>
+<p class='catatan sek' data-text='&#9829;' id='koteks'>
+<span id="text"></span><br><br><span id="penutup" style="font-size:1.1rem;"></span>
+</p>
 
-  <div id='Content'>
+<div id="tomAksi"><a class='button' onClick='bukaWa();'>tap ini ya</a></div>
 
-    <div id="ftAwal">
-      <!-- Stiker Pembuka -->
-      <img src="open.gif" id="ftoAwal" />
-    </div>
+</div>
 
-    <div id="loveIn">
-      <!-- Tombol LOVE --><label class='lovein'>&#10084;</label>
-    </div>
-    <p id="ket">Sentuh LOVEnya!</p>
+<!-- Teks, Lagu --><script>
+var i=0,text;text = "hbd y marbot alias intan. as we know gua gabisa yg manis manis sm lu. but u must to know that sejauh ini, kalo ditanya siapa temen gua, pasti nama lu duluan yg kesebut. mungkin temen gua bisa bertambah kapan aja, bisa gua dapetin dimana aja, tapi yg kaya lu ga ada lagi. glad to know you sm, i really mean it. meskipun SD kt kaya anjing vs anjing ya, gpp kan skrg tobat. lu sekarang udah bukan sekedar temen lagi buat gua, udah kaya saudara, karna yg mau nerima anjing anjingnya gua dengan lapang dada ya lu doang. stay tolol ya, biar gua bisa terus nasehatin lu. cepet kaya biar bisa berbagi sama yg lain. cepet nikah biar gua ada alasan buat balik ke sono. improve diri jadi lebih baik, tapi dari dalam, kalo dari luar ya gausa karna lu udah cukup. semoga kedepannya lu bisa manage emosi lu sendiri dengan baik, jgn mudah ke trigger sama bisa lebih lapang dada nerima apa yg terjadi, yakinin diri lu kalo apapun yg terjadi sekarang ga luput dari kesanggupan lu. lu keren uda bertahan sejauh ini, bakal ada hal bahagia yg nungguin lu nanti, dan gua harap gua tetep jadi saksi atas apa aja yg lu laluin nanti.";
+var u=0,penutup;penutup = "hbd🖕🏻🫶🏻🖕🏻";
 
-    <div class="kumpulanstiker">
-      <img src="GIF/1.gif" id="fotostiker" />
-      <img src="GIF/2.webp" id="fotostiker1" />
-      <img src="GIF/3.gif" id="fotostiker2" />
-      <img src="GIF/4.gif" id="fotostiker3" />
-      <img src="GIF/5.gif" id="fotostiker4" />
-      <img src="GIF/6.gif" id="fotostiker5" />
-      <img src="GIF/7.gif" id="fotostiker6" />
-      <img src="GIF/8.gif" id="fotostiker7" />
-      <img src="GIF/9.gif" id="fotostiker8" />
-      <img src="GIF/10.gif" id="fotostiker9" />
-      <img src="GIF/11.gif" id="fotostiker10" />
-      <img src="GIF/12.gif" id="fotostiker11" />
-      <img src="GIF/13.gif" id="fotostiker12" />
-      <img src="GIF/14.gif" id="fotostiker13" />
-      <img src="GIF/15.gif" id="fotostiker14" />
-      <img src="GIF/16.gif" id="fotostiker15" />
-      <img src="GIF/17.gif" id="fotostiker16" />
-      <img src="GIF/18.gif" id="fotostiker17" />
-      <img src="GIF/19.gif" id="fotostiker18" />
-      <img src="GIF/20.gif" id="fotostiker19" />
-    </div>
+function play() {//Link Audio Bisa Diganti
+var audio = new Audio('batas senja.mp3');
+  audio.play();
+}         
 
-    <div>
-      <div id='pergeseran'>
+//Reaksi
+ async function bukaWa(){window.location = "https://t.me/seeunyio"}
+</script>
 
-        <!-- Edit Pesan di Sini -->
-        <p><b>
-            <span>Happy mensive, pacarku yang ngeselin tapi ngangenin! hehe i'm so happy today ^-^ here's to many more days of sharing our stories. gak kerasa ternyata udah ditanggal aku dan kamu jadi kita </span>
-          </b></p>
+<script type="text/javascript">            
+            var today = new Date();var date = today.getDate()+'/'+(today.getMonth()+1)+'/'+today.getFullYear()+'.';var dateTime = date;
+            const swals = Swal.mixin({
+                backdrop: 'rgba(0,0,123,0.4)', confirmButtonColor: '#55009E', cancelButtonColor: '#FFCA00', allowOutsideClick: false,
+            });
+            async function mulai(){
+             await swals.fire({
+                title: "halo marbot", 
+                imageUrl: 'GIF/1.gif',
+                imageWidth: 200, imageHeight: 200,
+               }); 
+                 play();
+             
+                 await swals.fire({
+                  title: " becanda deh", 
+                  imageUrl: 'GIF/2.webp',
+                  imageWidth: 200, imageHeight: 200,
+                 });
 
-        <p><b>
-            <span>Siapa sangka yang awalnya saling godain doang, bisa jadi saling sayang sampe sekarang? tapi aku ngga nyesel bisa sampe di posisi skrg to be your boyfriend</span>
-          </b></p>
+                 await swals.fire({
+                  title: "hi bini apong", 
+                  imageUrl: 'GIF/3.gif',
+                  imageWidth: 200, imageHeight: 200,
+                 });
 
-        <p><b>
-            <span>Thanks ya, udah tahan sama aku yang kadang mikirnya childish, suka nyusahin kamu, dan sering banget caper padahal ujung-ujungnya bikin kamu kesel wkwk.</span>
-          </b></p>
+              await swals.fire({
+                  title: "bercanda lagi, nanti di geplak laki lu", 
+                  imageUrl: 'GIF/4.gif',
+                  imageWidth: 200, imageHeight: 200,
+                 });
 
-        <p><b>
-            <span>Maaf juga ya karena kamu harus sabar sama mood aku yang bisa berubah secepet sinyal ilang pas hujan—kadang marah gak jelas, tiba-tiba ngambek, OVT gak penting, terus malah bikin kamu pusing sendiri.</span>
-          </b></p>
+              await swals.fire({
+                  title: "this is ami, ur besto friendo yg numero uno", 
+                  imageUrl: 'GIF/5.gif',
+                  imageWidth: 200, imageHeight: 200,
+                 });
+              await swals.fire({
+                  title: "anjay sembilan belas ya? hbd, semoga hbd nya di hbd-in ", 
+                  imageUrl: 'GIF/6.gif',
+                  imageWidth: 200, imageHeight: 200,
+                 });
+              await swals.fire({
+                  title: "keren kan gua ngasih beginian? ya lah, emg lu lupa sm gua (akan gua ungkit terus)", 
+                  imageUrl: 'GIF/7.gif',
+                  imageWidth: 200, imageHeight: 200,
+                 });
+              await swals.fire({
+                  title: "gua pastiin gua yg pertama ngucapin, biar makin sujud lu sm gwh", 
+                  imageUrl: 'GIF/8.gif',
+                  imageWidth: 200, imageHeight: 200,
+                 });
+              await swals.fire({
+                  title: "WKWKWKWK ini kalo yg baca org lain, pasti ngira gua jahat😭", 
+                  imageUrl: 'GIF/9.gif',
+                  imageWidth: 200, imageHeight: 200,
+                 });
+              await swals.fire({
+                  title: "makanya baca sendiri dulu yap, resapin, paham!", 
+                  imageUrl: 'GIF/10.webp',
+                  imageWidth: 200, imageHeight: 200,
+                 });
+                 ketik();expl();
+            }    
+            mulai();
+</script>
 
-        <p><b>
-            <span>Padahal ya, sebenernya aku tuh cuma pengen nyari perhatian kamu aja :(</span>
-          </b></p>
+<!-- Di bawah ini JANGAN DIEDIT SEMBARANGAN -->
+<script>
+  function tombol() {document.getElementById('tomAksi').style.visibility = "visible";document.getElementById('tomAksi').style.opacity = "1";}
+  async function expl(){document.getElementById('bodyblur').style.opacity = "1";document.getElementById('bodyblur').style.visibility = "visible";setTimeout(duar,200);}
+  function aksifoto(){var e1 = document.getElementById('animasi');e1.classList.add("degdeg");document.getElementById('fotoloveu').style.opacity = "1";document.getElementById('fotoloveu').style.height = "180px";document.getElementById('fotoloveu').style.margin = "50px 0 0 0";}
 
-        <p><b>
-            <span>aAku tau banget kadang aku ngeselin setengah mati sampe kamu pengen nonjok aku (secara virtual ya!), tapi aku juga tau kamu tetep gak bisa bener-bener marah sama aku kan?? IYAAA KAAAN? 😝 YEAH ⭐️⭐️⭐️⭐️⭐️/⭐️⭐️⭐️⭐️⭐️ five out five stars for my boyfriend!!!</span>
-          </b></p>
+async function duar(){
+document.getElementById('konten').style.top = "0";document.getElementById('koteks').style.opacity = "1";
+document.body.style.backgroundColor = "#000";
+}
 
-        <p><b>
-            <span>jontol aku punya tebak tebakan, kuping kuping apa yang bisa bikin bahagia? </span>
-          </b></p>
+const body = document.querySelector("body");
+function createHeart() {
+    const heart = document.createElement("div");
+    heart.className = "fas fa-heart";
+    heart.style.left = (Math.random() * 90)+"vw";
+    heart.style.animationDuration = (Math.random()*3)+2+"s"
+    body.appendChild(heart);
+}
+setInterval(function name(params) {
+    var heartArr = document.querySelectorAll(".fa-heart")
+    if (heartArr.length > 50) {
+       heartArr[0].remove()
+    }
+},100);
 
-          <p><b>
-            <span> Jawabannya: "Kuping in sama kamu selamanya walaupun kamu ngeselin."
-Gemes gak? Gemes doong 😝</span>
-          </b></p>
-
-        <p><b>
-            <span>Let’s keep growing together, let’s be better, and let’s never forget how lucky we are to have each other.</span>
-          </b></p>
-
-        <p><b>
-            <span>Aku sayang kamu banyak banyak, meskipun kadang pengen cubit ginjal kamu pelan dikit hehe 💗</span>
-          </b></p>
-      </div>
-    </div>
-    <p id="ketgeser">Klik untuk Geser!</p>
-
-       <!-- Edit Pesan Akhir di Sini -->
-       <div><blockquote id='bq'>
-         <p id="kalimat">Happy Mensive!!! Ini hadiah simple yang bisa aku kasih untuk kamu, tapi aku bikin dengan penuh effort tau semoga kamu suka ya. aku sayang kamu dari awal kita jalin hubungan sampai sekarang, rasanya masih sama dan malah perasaan aku makin besar. Terimakasih untuk selalu usaha dalam hubungan kita sayang</p>
-         <p id="pesanAkhir"> I love you more than you know</p>
-       </blockquote></div>
-
-     </div>
-
-  </div>
-
-  <script>
-    const body = document.querySelector("body"); const iniwp = []; iden = 1; const swalst = Swal.mixin({timer: 2500, allowOutsideClick: false, showConfirmButton: false, timerProgressBar: true, imageHeight: 90, }); audio = new Audio('' + linkmp3.src); ftganti = 0; fungsi = 0; fungsiAwal = 0; deffotostiker = fotostiker.src; function berjatuhan() {const heart = document.createElement("div"); heart.className = "fas fa-heart"; heart.style.left = (Math.random() * 90) + "vw"; heart.style.animationDuration = (Math.random() * 3) + 2 + "s"; body.appendChild(heart);} setInterval(function name(params) {var heartArr = document.querySelectorAll(".fa-heart"); if (heartArr.length > 100) {heartArr[0].remove()} }, 100); Content.style = "opacity:1;margin-top:14vh"; const swals = Swal.mixin({allowOutsideClick: false, cancelButtonColor: '#FF0040', imageHeight: 80, }); 
-  </script>
-  <script src="script.js"></script>
-  <!-- Sampai Sini -->
+   function ketik() {
+    if(i<text.length){
+      document.getElementById("text").innerHTML += text.charAt(i);
+      i++;
+      setTimeout(ketik,120);
+    }
+    if(i==text.length){
+    ketikk();
+    }
+  }
+  function ketikk() {
+    if(u<penutup.length){
+      document.getElementById("penutup").innerHTML += penutup.charAt(u);
+      u++;
+      setTimeout(ketikk,210);
+    }
+    if(u==penutup.length){
+    tombol();aksifoto();setInterval(createHeart,300);
+    }
+  }
+</script>
 </body>
-
 </html>
